@@ -33,11 +33,11 @@ To make the wiki available to other devices, I self-host TiddlyWiki on a another
 export USERNAME=yourname
 export PASSWORD=yourpassword
 tiddlywiki . --listen \
-	host=0.0.0.0 \
-	port=8181 \
+    host=0.0.0.0 \
+    port=8181 \
     tls-cert=/path/to/cert.pem \
     tls-key=/path/to/privkey.pem \
-	username=$USERNAME \
+    username=$USERNAME \
     password=$PASSWORD
 ```
 
