@@ -1,0 +1,145 @@
+/* Style subtitle */
+.tc-site-subtitle {
+    color: #316dca;
+}
+
+/* Force anchors blue */
+a {
+    color: #539bf5;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+/* Thin and round tiddler borders */
+.tc-tiddler-frame {
+    border: none;
+    border-radius: 9px;
+    padding: 4px 13px !important;
+    margin-bottom: 13px;
+}
+
+/* Center and resize any image in title */
+div.kbtitle {
+    display: flex; 
+    align-items: center;
+}
+img.kbtitle {
+    margin-right:10px; 
+    width: 40px;
+    border-radius: 3px;
+}
+
+/* Remove border in search input */
+textarea, input[type=text], input[type=search], input[type=""], input:not([type]) {
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+/* Add some space under controls */
+.tc-page-controls {
+    margin-bottom: 12px;
+}
+
+/* Tweak pre-blocks */
+pre {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-left: 5px solid #768390;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+/* And code blocks */
+code {
+    border: none;
+    font-size: 10pt;
+    margin-right: 4px;
+    font-family: hack, monaco, monospace;
+}
+
+/* Move the right panel up a bit */
+body.tc-body .tc-sidebar-scrollable {
+    padding-top: 41px;
+    padding-left: 30px;
+}
+
+/* Darken the edit-tags panel */
+.tc-edit-tags {
+    background: #22272e;
+}
+
+/* Placeholder */
+::placeholder {
+  color: #636e7b;
+  opacity: 1; /* Firefox */
+}
+
+/* Prettify html buttons */
+html button {
+    line-height: 1.2;
+    color: #758390;
+    fill: #2e3440;
+    background-color: #22272e;
+    border: 1px solid #62707b;
+    padding: 4px 13px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Tags need some additional spacing */
+.tc-tags-wrapper {
+    margin: 9px 0 14px 0;
+}
+
+/* Remove border in CP */
+.tc-control-panel div {
+	border:none;
+}
+.tc-chooser-item {
+    background: #343b44;
+}
+
+/* Tiddler editor control button bg */
+.tc-editor-toolbar button {
+    background-color: #22272d;
+}
+
+/* FIXME: tabs so far */
+.tc-tab-set  button:hover {
+    background: #316eca;
+    color: #d3e9ff;
+}
+.tc-tab-buttons button.tc-tab-selected {
+    color: #cddaea;
+    background-color: #425062;
+}
+
+.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
+    background-color: #425062;
+}
+
+/* CodeMirror */
+.cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
+    font-size: 10pt;
+}
+
+.cm-s-tiddlywiki .CodeMirror-activeline-background, .cm-s-tiddlywiki .CodeMirror-activeline-gutter .CodeMirror-linenumber {
+    background: rgb(30 34 41);
+}
+.cm-s-tiddlywiki .CodeMirror-linenumber {
+    color: #636e7b;
+}
+.cm-s-tiddlywiki .CodeMirror-dialog {
+    background: #2a2f3a;
+}
+span.CodeMirror-search-hint {
+	color: #99a2b2 !important;
+}
+.CodeMirror-dialog-top {
+    border-bottom: 1px solid #4c5769;
+    top: 0;
+}
+.cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
+    min-height: 79px;
+}
