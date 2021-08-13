@@ -1,9 +1,9 @@
 created: 20210806193712209
 creator: User
-modified: 20210806193747743
+modified: 20210820145250729
 modifier: User
-tags: Tasks
-title: TODO
+tags: Contents
+title: Pending Tasks
 type: text/vnd.tiddlywiki
 
 <$list filter="[!has[draft.of]tag[task]!tag[done]sort[created]]">
@@ -13,3 +13,7 @@ type: text/vnd.tiddlywiki
     </$link>
   </$checkbox>
 </$list>
+
+---
+
+See also [[Completed Tasks]]

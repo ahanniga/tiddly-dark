@@ -1,15 +1,34 @@
+@font-face {
+  font-family: 'Hack';
+  src: url('/files/hack-regular.woff2') format('woff2'), url('/files/hack-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Shape tag pills */
+button.tc-tag-label, span.tc-tag-label {
+    padding: 0px 8px;
+    color: #c8e1ff !important;
+    line-height: inherit;
+}
+.tc-remove-tag-button {
+	padding-left: 9px;
+}
+
 /* For title border we need to switch padding/margins */
 .tc-titlebar {
-    line-height: 1.20em;
     margin: 0;
-    padding: 15px 15px 5px 15px;
+    line-height: normal;
+    font-size: 20pt;
+    padding: 10px 10px 5px 15px;
 }
 input.tc-titlebar.tc-edit-texteditor {
-    padding-left: 10px;
+    padding-left: 7px;
 }
 .tc-subtitle {
     padding: 0 15px 0 15px;
 }
+
 .tc-tags-wrapper {
 	margin: 9px 0px -1px 0;
     border-top: 1px solid #444c56;
@@ -46,7 +65,7 @@ span.tc-tiddler-controls.tc-titlebar {
 
 /* Force anchors blue */
 a {
-    color: #539bf5;
+    color: #539bf5 !important;
     text-decoration: none !important;
     margin-right: 3px;
 }
@@ -73,13 +92,14 @@ label {
     border: 1px solid #444c56;
     border-radius: 9px;
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 
 /* Center and resize any image in title */
 div.kbtitle {
     display: flex; 
     align-items: center;
+	font-size: 22pt;
 }
 img.kbtitle {
     margin-right:10px; 
@@ -105,7 +125,6 @@ textarea, input[type=text], input[type=search], input[type=""], input:not([type]
 pre {
     padding-top: 6px;
     padding-bottom: 6px;
-    border-left: 5px solid #768390;
     padding-left: 10px;
     border-radius: 5px;
 }
@@ -114,7 +133,7 @@ pre {
 code {
     border: none;
     font-size: 10pt;
-    margin-right: 4px;
+    margin: 3px;
     font-family: hack, monaco, monospace;
 }
 
