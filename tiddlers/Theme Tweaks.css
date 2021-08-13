@@ -26,7 +26,7 @@ span.tc-tiddler-controls.tc-titlebar {
     padding: 5px 0px 10px 0px;
 }
 .tc-tiddler-frame.tc-tiddler-edit-frame.tc-tiddler-exists {
-    padding: 10px !important;
+    padding: 10px 15px 10px 15px !important;
 }
 
 /* Username not required */
