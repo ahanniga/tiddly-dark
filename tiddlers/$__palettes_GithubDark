@@ -2,10 +2,10 @@ alert-background: #984444
 alert-border: #ca5a5a
 alert-highlight: #B48EAD
 alert-muted-foreground: #768390
-background: #2d333b
+background: #22272e
 blockquote-bar: <<colour muted-foreground>>
 button-foreground: adbac7
-code-background: #22272e
+code-background: #2d333b
 code-border: #22272e
 code-foreground: #adbac7
 diff-delete-background: #BF616A
@@ -22,7 +22,7 @@ download-foreground: <<colour background>>
 dragger-background: <<colour foreground>>
 dragger-foreground: <<colour background>>
 dropdown-background: <<colour background>>
-dropdown-border: #22272d
+dropdown-border: #22272e
 dropdown-tab-background-selected: #316dca
 dropdown-tab-background: #768390
 dropzone-background: #57ab5a
@@ -33,22 +33,22 @@ external-link-foreground-hover: inherit
 external-link-foreground-visited: #539bf5
 external-link-foreground: #8FBCBB
 foreground: #adbac7
-menubar-background: #22272e
+menubar-background: #313840
 menubar-foreground: #adbac7
 message-background: #22272e
 message-border: #22272e
 message-foreground: #547599
 modal-backdrop: <<colour foreground>>
 modal-background: <<colour background>>
-modal-border: #63707b
+modal-border: #444c56
 modal-footer-background: #2d333b
-modal-footer-border: #63707b
-modal-header-border: #63707b
+modal-footer-border: #444c56
+modal-header-border: #444c56
 muted-foreground: #768390
 notification-background: <<colour primary>>
 notification-border: #EBCB8B
 page-background: #22272e
-pre-background: #22272e
+pre-background: #2d333b
 pre-border: #22272e
 primary: #539bf5
 select-tag-background: #2d333b
@@ -74,13 +74,13 @@ sidebar-tiddler-link-foreground: #768390
 site-title-foreground: #adbac7
 static-alert-foreground: #B48EAD
 tab-background-selected: #316dca
-tab-background: #22272d
+tab-background: #22272e
 tab-border-selected: #768390
 tab-border: #768390
 tab-divider: #768390
 tab-foreground-selected: #768390
 tab-foreground: #adbac7
-table-border: #768390
+table-border: #444c56
 table-footer-background: #22272e
 table-header-background: #22272e
 tag-background: #316dca
@@ -92,7 +92,7 @@ tiddler-controls-foreground-selected: #adbac7
 tiddler-controls-foreground: #768390
 tiddler-editor-background: #22272e
 tiddler-editor-border-image: #22272e
-tiddler-editor-border: #63707b
+tiddler-editor-border: #444c56
 tiddler-editor-fields-even: #22272e
 tiddler-editor-fields-odd: #22272e
 tiddler-info-background: #22272e

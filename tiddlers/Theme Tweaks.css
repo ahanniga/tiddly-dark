@@ -1,20 +1,78 @@
+/* For title border we need to switch padding/margins */
+.tc-titlebar {
+    line-height: 1.20em;
+    margin: 0;
+    padding: 15px 15px 5px 15px;
+}
+input.tc-titlebar.tc-edit-texteditor {
+    padding-left: 10px;
+}
+.tc-subtitle {
+    padding: 0 15px 0 15px;
+}
+.tc-tags-wrapper {
+	margin: 9px 0px -1px 0;
+    border-top: 1px solid #444c56;
+    padding: 0 10px 0 10px;
+}
+.tc-tiddler-body {
+    padding: 10px 15px;
+    border-top: 1px solid #444c56;
+}
+
+/* Edit tiddler */
+span.tc-tiddler-controls.tc-titlebar {
+    margin: 0;
+    padding: 5px 0px 10px 0px;
+}
+.tc-tiddler-frame.tc-tiddler-edit-frame.tc-tiddler-exists {
+    padding: 10px !important;
+}
+
+/* Username not required */
+.tc-subtitle .tc-tiddlylink {
+    display: none;
+}
+
 /* Style subtitle */
 .tc-site-subtitle {
     color: #316dca;
 }
 
+/* Add margin to pills */
+.tc-tags-wrapper .tc-tag-list-item {
+	margin: 10px 5px 10px 2px;
+}
+
 /* Force anchors blue */
 a {
     color: #539bf5;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-right: 3px;
+}
+
+/* Force bg for all hljs classes */
+.hljs {
+    background: #2d333b;
+}
+
+/* Make lables inline */
+label {
+	display: inline-block;
+}
+.tc-sidebar-lists button {
+    color: #768290;
+    fill: #768290;
+}
+.tc-sidebar-lists label {
+	margin-right: 3px;
 }
 
 /* Thin and round tiddler borders */
 .tc-tiddler-frame {
-    border: none;
+    border: 1px solid #444c56;
     border-radius: 9px;
-    padding: 4px 13px !important;
+    padding: 0;
     margin-bottom: 13px;
 }
 
@@ -29,11 +87,13 @@ img.kbtitle {
     border-radius: 3px;
 }
 
-/* Remove border in search input */
+/* Style search input */
 textarea, input[type=text], input[type=search], input[type=""], input:not([type]) {
-    border: none;
+    border: 1px solid #444c56;
+    border-radius: 3px;
     padding: 5px;
     outline: none;
+    margin-right: 5px;
 }
 
 /* Add some space under controls */
@@ -67,6 +127,8 @@ body.tc-body .tc-sidebar-scrollable {
 /* Darken the edit-tags panel */
 .tc-edit-tags {
     background: #22272e;
+    border: none;
+    padding: 5px 0 0 0;
 }
 
 /* Placeholder */
@@ -81,15 +143,10 @@ html button {
     color: #758390;
     fill: #2e3440;
     background-color: #22272e;
-    border: 1px solid #62707b;
+    border: 1px solid #444c56;
     padding: 4px 13px;
     border-radius: 7px;
     cursor: pointer;
-}
-
-/* Tags need some additional spacing */
-.tc-tags-wrapper {
-    margin: 9px 0 14px 0;
 }
 
 /* Remove border in CP */
@@ -100,9 +157,32 @@ html button {
     background: #343b44;
 }
 
+/* Editor toolbar - ease left */
+
+.tc-editor-toolbar {
+    margin-left: -4px;
+    margin-bottom: 3px;
+}
+
+/* Editor, remove top/bottom field margin */
+table.tc-edit-fields {
+    margin: 0;
+}
+
 /* Tiddler editor control button bg */
 .tc-editor-toolbar button {
-    background-color: #22272d;
+    background-color: #22272e;
+    color: #768290;
+    fill: #768290;
+    border: 1px solid #444c56;
+}
+
+/* Drop-down border */
+.tc-drop-down {
+    border: 1px solid #444c56;
+}
+.tc-block-dropdown {
+    border: 1px solid #444c56;
 }
 
 /* FIXME: tabs so far */
@@ -119,6 +199,13 @@ html button {
     background-color: #425062;
 }
 
+/* Style HR */
+hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid #444c56;
+}
+
 /* CodeMirror */
 .cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
     font-size: 10pt;
@@ -131,7 +218,7 @@ html button {
     color: #636e7b;
 }
 .cm-s-tiddlywiki .CodeMirror-dialog {
-    background: #2a2f3a;
+    background: #2d333b;
 }
 span.CodeMirror-search-hint {
 	color: #99a2b2 !important;
@@ -143,3 +230,4 @@ span.CodeMirror-search-hint {
 .cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
     min-height: 79px;
 }
+
