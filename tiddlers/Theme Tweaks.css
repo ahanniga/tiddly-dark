@@ -5,6 +5,15 @@
   font-style: normal;
 }
 
+p {
+    margin: 0;
+}
+
+/* Heading font bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
 /* Shape tag pills */
 button.tc-tag-label, span.tc-tag-label {
     padding: 0px 8px;
@@ -12,7 +21,7 @@ button.tc-tag-label, span.tc-tag-label {
     line-height: inherit;
 }
 .tc-remove-tag-button {
-	padding-left: 9px;
+    padding-left: 9px;
 }
 
 /* For title border we need to switch padding/margins */
@@ -20,7 +29,7 @@ button.tc-tag-label, span.tc-tag-label {
     margin: 0;
     line-height: normal;
     font-size: 20pt;
-    padding: 10px 10px 5px 15px;
+    padding: 10px 10px 13px 15px;
 }
 input.tc-titlebar.tc-edit-texteditor {
     padding-left: 7px;
@@ -31,6 +40,7 @@ input.tc-titlebar.tc-edit-texteditor {
 .tc-subtitle {
     padding: 0px 15px 10px 15px;
     border-bottom: 1px solid #444c56;
+    margin-top: -5px;
 }
 
 .tc-tiddler-body {
@@ -44,6 +54,9 @@ span.tc-tiddler-controls.tc-titlebar {
 }
 .tc-tiddler-frame.tc-tiddler-edit-frame.tc-tiddler-exists {
     padding: 10px 15px 10px 15px !important;
+}
+.tc-tiddler-controls button svg, .tc-tiddler-controls button img {
+    height: 21px;
 }
 
 /* Username not required */
@@ -64,7 +77,7 @@ span.tc-tiddler-controls.tc-titlebar {
 
 /* Add margin to pills */
 .tc-tags-wrapper .tc-tag-list-item {
-	margin: 10px 5px 10px 2px;
+    margin: 10px 5px 10px 2px;
 }
 
 /* Force anchors blue */
@@ -82,14 +95,14 @@ a {
 
 /* Make lables inline */
 label {
-	display: inline-block;
+    display: inline-block;
 }
 .tc-sidebar-lists button {
     color: #768290;
     fill: #768290;
 }
 .tc-sidebar-lists label {
-	margin-right: 3px;
+    margin-right: 3px;
 }
 
 /* Thin and round tiddler borders */
@@ -101,14 +114,14 @@ label {
 }
 
 .tc-tiddler-tite {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 /* Center and resize any image in title */
 div.kbtitle {
     display: flex; 
     align-items: center;
-	font-size: 22pt;
+    font-size: 22pt;
     margin-bottom: 5px;
 }
 img.kbtitle {
@@ -181,7 +194,7 @@ html button {
 
 /* Remove border in CP */
 .tc-control-panel div {
-	border:none;
+    border:none;
 }
 .tc-chooser-item {
     background: #343b44;
@@ -259,7 +272,7 @@ hr {
     background: #2d333b;
 }
 span.CodeMirror-search-hint {
-	color: #99a2b2 !important;
+    color: #99a2b2 !important;
 }
 .CodeMirror-dialog-top {
     border-bottom: 1px solid #4c5769;
@@ -273,7 +286,7 @@ span.CodeMirror-search-hint {
     padding: 15px;
 }
 
-/* Style tables */
+/* Style tables (TW5/MD content-types) */
 table {
   border-collapse: separate;
   border-radius: 10px;
@@ -281,25 +294,29 @@ table {
   border: 1px solid #454c56;
   border-spacing: 0;
 }
-
 table th, table td {
     border-top: none;
     border-left: none;
 }
-
 table th {
     background-color: #2f3844;
     padding: 6px 15px 6px 15px;
 }
-table td {
+table td, .tc-control-panel td {
     padding: 4px 15px 4px 15px;
 }
 tr:not(:first-child) td {
   border-top: 1px solid #454c56; 
 }
 td:not(:last-child), th:not(:last-child) {
-  border-right: 1px solid #454c56; 
+ /* Vertical column dividers */
+ /* border-right: 1px solid #454c56; */
 }
 table>thead :first-child th {
   border-bottom: 1px solid #454c56; 
+}
+
+/* Tiddler info popup */
+.tc-tiddler-info {
+    margin: 0px;
 }
