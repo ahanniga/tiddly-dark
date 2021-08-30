@@ -5,12 +5,12 @@ A themed version of TiddlyWiki5 focussed on managing programmers notes
 
 If you're not already familiar with TiddyWiki I recommend you checkout the official page at [TiddlyWiki.com](https://tiddlywiki.com/). **Tiddy Dark** is a themed version of [Jeremy Rushton's](https://tiddlywiki.com/#JeremyRuston) wonderful creation with pre-installed plugins especially useful for developer notes. In summary:
 
-- Uses the server edition
-- Images and binary files managed with the *importToExternalFile* plugin
-- Markdown syntax by default
-- Syntax-highlighted code blocks
-- Search Highlighting
-- CodeMirror editor
+- Uses the [server edition](https://tiddlywiki.com/#Installing%20TiddlyWiki%20on%20Node.js)
+- Images and binary files managed with the [importToExternalFile](https://saqimtiaz.github.io/sq-tw/temp/import-to-external-file.html) plugin
+- Markdown syntax by default ([Remarkable plugin](https://github.com/Jermolene/TiddlyWiki5/tree/master/plugins/tiddlywiki/markdown))
+- Syntax-highlighted code blocks ([Highlight plugin](https://tiddlywiki.com/#Highlight%20Plugin))
+- CodeMirror editor [plugin](https://tiddlywiki.com/#CodeMirror%20Plugin)
+- VSCode/Sublime-like [Command Palette](https://souk21.github.io/TW-commandpalette/) plugin.
 
 ## Prerequisites
 
