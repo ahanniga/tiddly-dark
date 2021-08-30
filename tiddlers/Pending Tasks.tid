@@ -1,6 +1,6 @@
 created: 20210806193712209
 creator: User
-modified: 20210820145250729
+modified: 20210830113828309
 modifier: User
 tags: Contents
 title: Pending Tasks
@@ -13,7 +13,5 @@ type: text/vnd.tiddlywiki
     </$link>
   </$checkbox>
 </$list>
-
----
 
 See also [[Completed Tasks]]

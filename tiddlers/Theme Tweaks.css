@@ -272,3 +272,34 @@ span.CodeMirror-search-hint {
 .tc-import {
     padding: 15px;
 }
+
+/* Style tables */
+table {
+  border-collapse: separate;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #454c56;
+  border-spacing: 0;
+}
+
+table th, table td {
+    border-top: none;
+    border-left: none;
+}
+
+table th {
+    background-color: #2f3844;
+    padding: 6px 15px 6px 15px;
+}
+table td {
+    padding: 4px 15px 4px 15px;
+}
+tr:not(:first-child) td {
+  border-top: 1px solid #454c56; 
+}
+td:not(:last-child), th:not(:last-child) {
+  border-right: 1px solid #454c56; 
+}
+table>thead :first-child th {
+  border-bottom: 1px solid #454c56; 
+}
