@@ -25,18 +25,16 @@ button.tc-tag-label, span.tc-tag-label {
 input.tc-titlebar.tc-edit-texteditor {
     padding-left: 7px;
 }
+.tc-tiddler-title {
+    background-color: transparent;
+}
 .tc-subtitle {
-    padding: 0 15px 0 15px;
+    padding: 0px 15px 10px 15px;
+    border-bottom: 1px solid #444c56;
 }
 
-.tc-tags-wrapper {
-	margin: 9px 0px -1px 0;
-    border-top: 1px solid #444c56;
-    padding: 0 10px 0 10px;
-}
 .tc-tiddler-body {
     padding: 10px 15px;
-    border-top: 1px solid #444c56;
 }
 
 /* Edit tiddler */
@@ -58,6 +56,12 @@ span.tc-tiddler-controls.tc-titlebar {
     color: #316dca;
 }
 
+.tc-tags-wrapper {
+    margin: 0 0 0px 0;
+    padding: 0px 0px 0px 15px;
+    border-bottom: 1px solid #444c56;
+}
+
 /* Add margin to pills */
 .tc-tags-wrapper .tc-tag-list-item {
 	margin: 10px 5px 10px 2px;
@@ -73,6 +77,7 @@ a {
 /* Force bg for all hljs classes */
 .hljs {
     background: #2d333b;
+    line-height: 1.4;
 }
 
 /* Make lables inline */
@@ -95,11 +100,16 @@ label {
     margin-bottom: 15px;
 }
 
+.tc-tiddler-tite {
+	background-color: transparent;
+}
+
 /* Center and resize any image in title */
 div.kbtitle {
     display: flex; 
     align-items: center;
 	font-size: 22pt;
+    margin-bottom: 5px;
 }
 img.kbtitle {
     margin-right:10px; 
@@ -114,6 +124,7 @@ textarea, input[type=text], input[type=search], input[type=""], input:not([type]
     padding: 5px;
     outline: none;
     margin-right: 5px;
+    font-family: Hack;
 }
 
 /* Add some space under controls */
@@ -140,7 +151,7 @@ code {
 /* Move the right panel up a bit */
 body.tc-body .tc-sidebar-scrollable {
     padding-top: 41px;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 /* Darken the edit-tags panel */
@@ -217,6 +228,14 @@ table.tc-edit-fields {
 .tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
     background-color: #425062;
 }
+.tc-sidebar-lists a.tc-tiddlylink:hover {
+    color: #c8e1ff !important;
+}
+
+/* Dropdown foreground */
+.tc-block-dropdown a.tc-tiddlylink:hover {
+    color: #c8e1ff !important;
+}
 
 /* Style HR */
 hr {
@@ -250,3 +269,6 @@ span.CodeMirror-search-hint {
     min-height: 79px;
 }
 
+.tc-import {
+    padding: 15px;
+}
