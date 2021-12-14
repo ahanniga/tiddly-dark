@@ -320,3 +320,9 @@ table>thead :first-child th {
 .tc-tiddler-info {
     margin: 0px;
 }
+
+/* Drafts List */
+.tc-drafts-list a {
+    background: #316dca;
+    color: #eee !important;
+}
