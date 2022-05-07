@@ -4,6 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+/*
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/files/OpenSans-Regular.woff2') format('woff2'), url('/files/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: regular;
+}
+*/
 
 p {
     margin: 0;
@@ -110,11 +118,16 @@ label {
     border: 1px solid #444c56;
     border-radius: 9px;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 23px;
 }
 
 .tc-tiddler-tite {
     background-color: transparent;
+}
+
+/* Reduce unfold button spacing */
+button.tc-unfold-banner {
+    margin-top: 1px;
 }
 
 /* Center and resize any image in title */
@@ -151,6 +164,8 @@ pre {
     padding-bottom: 6px;
     padding-left: 10px;
     border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 /* And code blocks */
@@ -278,8 +293,15 @@ span.CodeMirror-search-hint {
     border-bottom: 1px solid #4c5769;
     top: 0;
 }
+
+/*
+TEST
 .cm-s-tiddlywiki.CodeMirror, .cm-s-tiddlywiki .CodeMirror-gutters {
     min-height: 79px;
+}
+*/
+.CodeMirror-scroll {
+	min-height: 100px;
 }
 
 .tc-import {
