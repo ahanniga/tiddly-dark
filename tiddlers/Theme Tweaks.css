@@ -352,3 +352,40 @@ table>thead :first-child th {
     background: #316dca;
     color: #eee !important;
 }
+
+/* Fixes the ugly scrollbars on Linux and issue #2 */
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #22272e;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    height: 10px;
+    background-color: #22272e;
+}
+
+.tc-sidebar-scrollable::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #444c56;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #22272e;
+} {
+    width: 200px;
+    height: 400px;
+    overflow: scroll;
+    white-space: nowrap;
+}
