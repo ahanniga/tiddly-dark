@@ -42,3 +42,7 @@ tiddlywiki . --listen \
 ```
 
 A second, possibly more secure method is to use NGINX with a `proxy_pass` configuration. An example `server` section of `/etc/nginx/nginx.conf` example [here](https://gist.github.com/ahanniga/eec61a152b7e41687452a1f5535d6636).
+
+## Alternative Desktop Edition
+
+See [Tiddly-Dark-Desktop](https://github.com/ahanniga/tiddly-dark-desktop) for an all-in-one application for MacOS, Linux and Windows.
